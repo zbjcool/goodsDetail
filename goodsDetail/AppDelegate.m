@@ -3,10 +3,12 @@
 //  goodsDetail
 //
 //  Created by jack steven on 15/9/14.
-//  Copyright (c) 2015年 zhengbj. All rights reserved.
+//  Copyright (c) 2015年 jack steven. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+#import "PDMainViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +18,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    ViewController *vc = [[ViewController alloc] init];
+    PDMainViewController *mainVC = [[PDMainViewController alloc] initWithNibName:@"PDMainViewController" bundle:nil];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    self.window.rootViewController = nav;//
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

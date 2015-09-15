@@ -3,7 +3,7 @@
 //  goodsDetailTests
 //
 //  Created by jack steven on 15/9/14.
-//  Copyright (c) 2015年 zhengbj. All rights reserved.
+//  Copyright (c) 2015年 jack steven. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
